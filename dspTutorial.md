@@ -35,7 +35,7 @@ PieCtrlRegs.PIEIER3.bit.INTx2 = 1;
 配置中断的回调函数`callbackfunction`
 ```c
     EALLOW;
-    PieVectTable.EPWM2_INT = &epwm2_isr; //function for ADCA interrupt 1
+    PieVectTable.EPWM2_INT = &epwm2_isr; //function for EPWM2 interrupt 
     EDIS;
 ```
 写一个函数
