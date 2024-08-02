@@ -53,7 +53,7 @@ interrupt void epwm2_isr(void)
 
 使能group1和全局中断，这个一般放在最后
 ``` c
-    IER |= M_INT3; //Enable group 1 interrupts
+    IER |= M_INT3; //Enable group 3 interrupts
     EINT;  // Enable Global interrupt INTM
     ERTM;  // Enable Global realtime interrupt DBGM
 
